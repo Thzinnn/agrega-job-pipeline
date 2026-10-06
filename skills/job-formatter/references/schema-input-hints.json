@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JobFormatterInputHints",
+  "type": "object",
+  "description": "Campos conhecidos que scrapers podem enviar. O agente deve aceitar QUALQUER campo extra e ignorar o que não reconhece.",
+  "properties": {
+    "event": {
+      "type": "string",
+      "enum": [
+        "job.upsert",
+        "job.delete"
+      ]
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id_vaga": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "job_id": {
+            "type": "string"
+          },
+          "titulo": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "cargo": {
+            "type": "string"
+          },
+          "empresa": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "employer": {
+            "type": "string"
+          },
+          "local": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "cidade": {
+            "type": "string"
+          },
+          "estado": {
+            "type": "string"
+          },
+          "salario": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "salary": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "faixa_salarial": {
+            "type": "string"
+          },
+          "tipo_vaga": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contract_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tipo_contrato": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "turno_horario": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "work_schedule": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "jornada": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "beneficios": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "benefits": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "beneficios_lista": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "descricao": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "descricao_completa": {
+            "type": "string"
+          },
+          "link": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "application_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "link_candidatura": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "data_coleta": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "collected_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scraped_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fonte": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "origem": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
